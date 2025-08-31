@@ -44,7 +44,7 @@ nav .buttons button {
 	border-radius: 4px;
 }
 nav .buttons img {
-	width: 3vh;
+	width: auto;
 	height: 3vh;
 }
 .paragraph {
@@ -284,5 +284,76 @@ footer li {
 		flex-direction: row;
 		justify-content: space-between;
 		width: 80vw;
+	}
+}
+
+@media (min-width: 1024px) {
+	ul[hidden] {
+		display: flex;
+		list-style: none;
+		text-decoration: none;
+	}
+	nav > div:first-child {
+		display: flex;
+		align-items: center;
+		gap: 2vw;
+	}
+	nav img:first-child {
+		width: 20vw;
+	}
+	nav .links {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 3vw;
+	}
+	nav .links li {
+		list-style: none;
+		font-size: 2rem;
+	}
+	nav a {
+		color: white;
+		text-decoration: none;
+	}
+	nav .buttons button:nth-child(2) {
+		display: none;
+	}
+	nav .buttons button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	nav .buttons img {
+		width: 3vw;
+		height: auto;
+	}
+	.login {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		font-weight: bold;
+		width: 15vw;
+		height: 4vh;
+		font-size: 1.3rem;
+		gap: 2vw;
+	}
+	.login li {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 10vw;
+		height: 4vh;
+		border-radius: 5px;
+	}
+	.login li:nth-child(2) {
+		background-color: #fff;
+	}
+	.login li:nth-child(2) a {
+		color: #540b51;
+	}
+	.login a {
+		color: white;
+		text-decoration: none;
 	}
 }
