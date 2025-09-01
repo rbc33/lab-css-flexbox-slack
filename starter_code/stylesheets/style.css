@@ -229,7 +229,6 @@ footer li {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		/* padding: 0 2.5vw 2vh 2vw; */
 	}
 	.signup button {
 		width: 40vw;
@@ -368,5 +367,23 @@ footer li {
 		background-color: #540b51;
 		width: 100%;
 		padding-bottom: 5vh;
+	}
+}
+
+@media (min-width: 1440px) {
+	.signup {
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		gap: 10px;
+	}
+	.signup button {
+		width: 20vw;
+	}
+	.signup button:first-child {
+		margin-bottom: 4vh;
+	}
+	.paragraph {
+		height: 80vh;
 	}
 }
